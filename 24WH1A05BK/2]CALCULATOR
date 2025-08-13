@@ -1,0 +1,58 @@
+package calculator;
+import java.util.Scanner;
+public class calculator 
+{
+   public static void main(String[] args) 
+   {
+	  
+ Scanner sc=new Scanner(System.in);
+	   
+	   System.out.print("enter num1:");
+	   int num1=sc.nextInt();
+	   
+	   System.out.print("enter num2:");
+	   int num2=sc.nextInt();
+	   
+	   System.out.println("choose an option:");
+	   System.out.println("1=add");
+	   System.out.println("2=sub");
+	   System.out.println("3=multiply");
+	   System.out.println("4=divide");
+	   int option=sc.nextInt();
+	   {
+		  
+		   switch (option) 
+		   {
+           case 1:
+               System.out.println("Result = " + (num1 + num2));
+               break;
+           case 2:
+               System.out.println("Result = " + (num1 - num2));
+               break;
+           case 3:
+               System.out.println("Result = " + (num1 * num2));
+               break;
+           case 4:
+               if (num2 != 0) 
+               {
+                   System.out.println("Result = " + (num1 / num2));
+               } else 
+               {
+                   System.out.println("Error: Cannot divide by zero");
+               }
+               break;
+           default:
+               System.out.println("Invalid option!");
+		   }
+	   }
+		   
+   }
+}
+	   
+
+   
+	 
+	   
+	   
+   
+
