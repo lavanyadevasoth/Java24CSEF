@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+
+
+public class Switch {
+
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		int number1,number2;
+
+		String  sysmbol;
+
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("enter number 1");
+
+		number1=sc.nextInt();
+
+		System.out.println("enter number2");
+
+		number2=sc.nextInt();
+
+		System.out.println("enter any sysmbol");
+
+		sysmbol=sc.next();
+
+		switch (sysmbol){ 
+
+			case "+":
+
+				System.out.println(number1+number2);
+
+				break;
+
+			case "-":
+
+				System.out.println(number1-number2);
+
+				break;
+
+			case "*":
+
+				System.out.println(number1*number2);
+
+				break;
+
+			case "/":
+
+				System.out.println(number1/number2);
+
+				break;
+
+			default:
+
+				System.out.println("enter valid input");
+
+				break;
+
+			
+
+		}
+
+		
+
+
+
+	}
+
+
+
+
+
+
+
+}
+
