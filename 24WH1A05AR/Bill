@@ -1,0 +1,34 @@
+package Com.Sample;
+
+public class Bill {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter old readings");
+		System.out.println("enter new readings");
+		int units1,units2=scanner.nextInt();
+		int units=units2-units1;
+		if(units<50) {
+			units=units*1;
+			System.out.println(units);
+		}
+		else if(units>50 && units<100) {
+			units=(50*1)+((units-50)*2);
+			System.out.println(units);
+		}
+		else if(units>100 && units<200) {
+			units=50*1+50*2+((units-100)*3);
+			System.out.println(units);
+		}
+		else if(units>200 && units<400) {
+			units=50*1+50*2+100*3+((units-200)*4);
+			System.out.println(units);
+		}
+		else {
+			units=50*1+50*2+100*3+200*4+((units-400)*5);
+			System.out.println(units);
+		}
+
+	}
+    scanner.close();
+}
