@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+
+
+public class EBILL {
+
+
+
+	public static void main(String[] args) {
+
+		int punit;
+
+		int result=0;
+
+		int sub;
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("enter the units");
+
+		punit = sc.nextInt();
+
+
+
+		if (punit < 50) {
+
+			result = result + (50 * 1);
+
+		} else if (punit <= 100) {
+
+			sub = punit - 50;
+
+			result = result + (50 * 1) + (sub * 2);
+
+
+
+		} else if (punit <= 200) {
+
+			sub = punit - 100;
+
+			result = result + (50 * 1) + (50 * 2) + (sub * 3);
+
+
+
+		} else if (punit <= 400) {
+
+			sub = punit - 200;
+
+			result = result + (50 * 1) + (50 * 2) + (100 * 3) + (sub * 4);
+
+		} else {
+
+			sub = punit - 400;
+
+			result = result + (50 * 1) + (50 * 2) + (100 * 3) + (200 * 4) + (sub * 5);
+
+
+
+		}
+
+		System.out.println(result);
+
+
+
+		// TODO Auto-generated method stub
+
+
+
+	}
+
+
+
+}
+
