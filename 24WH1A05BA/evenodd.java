@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+
+
+public class Sumeo {
+
+
+
+	public static void main(String[] args) {
+
+		int n;
+
+		int i;
+
+		int x;
+
+		int even=0;
+
+		int odd=0;
+
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("enter how many integer you want");
+
+		n=sc.nextInt();
+
+		for (i=0;i<n;i++) {
+
+			System.out.printf("enter the element %d :",(i+1));
+
+			x=sc.nextInt();
+
+			if (x%2==0) {
+
+				even=even+x;
+
+			}
+
+			else {
+
+				odd=odd+x;
+
+			}
+
+		}
+
+		System.out.printf("the sum of even integer is %d",even);
+
+		System.out.printf("\n the sum of odd integer is %d",odd);
+
+		
+
+		
+
+		
+
+	}
+
+
+
+}
+
