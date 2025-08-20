@@ -1,3 +1,4 @@
+package javaprog;
 import java.util.Scanner;
 public class Week1_StarPattern {
 
