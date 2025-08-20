@@ -1,0 +1,27 @@
+package labprogramme;
+
+import java.util.Scanner;
+
+public class integerSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner range = new Scanner(System.in);
+        System.out.println("Enter range of integers:");
+        int n = range.nextInt();
+        int i;
+        int evenSum=0;
+        int oddSum=0;
+        for(i=0;i<n;i++) {
+        	if(i % 2 == 0) {
+        		evenSum+=i;
+        	}
+        	else {
+        		oddSum+=i;
+        	}
+        }
+        System.out.println("Sum of even integers:"+evenSum);
+        System.out.println("Sum of odd integers:"+oddSum);
+	}
+
+}
