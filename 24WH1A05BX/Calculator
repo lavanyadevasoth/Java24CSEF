@@ -1,0 +1,42 @@
+package demo;
+
+import java.util.Scanner;
+
+public class calculator {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		String oper = sc.next();
+		switch(oper)
+		{
+		case "+" :
+			System.out.println("Addition :  " + (n1+n2));
+			//System.out.println();
+			break;
+		case "-":
+            System.out.println("Subtraction : " + (n1-n2));
+           // System.out.println();
+            break;
+		case "*" :
+			System.out.println("multiplication : " + (n1*n2));
+            //System.out.println();
+            break;
+		case "/" :
+			System.out.println("division : " + (n1/n2));
+            //System.out.println();
+            break;
+		case "%" :
+			System.out.println("modulo : " + (n1%n2));
+            //2
+		    System.out.println();
+            break;
+         default :
+        	 System.out.println("Invalid");
+		}
+		
+
+	}
+
+}
